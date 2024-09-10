@@ -95,7 +95,9 @@ int main(void)
 	
 	fclose(fp);
 	
-	
+	if (remove("image_recue.jpg") != 0) {
+	    fprintf(stderr, "(CLIENT) Échec de la suppression du fichier 'image_recue.jpg'.\n");
+	}
 	
 	#ifdef _WIN32
 		closesocket(socketFD);

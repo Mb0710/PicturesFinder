@@ -161,6 +161,12 @@ int main(void)
 	}
 	
 	
+	int opt = 1;
+	if (setsockopt(socketFD, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) == -1) {
+	    fprintf(stderr, "(SERVEUR) Echec de configuration de l'option SO_REUSEADDR\n");
+	    exit(1);
+	}
+	
 	// CFG SOCKET + LIAISON
 	
 	struct sockaddr_in socketAddress;
@@ -243,8 +249,7 @@ int main(void)
 	}
 	
 	fclose(fp);
-	
-			
+		
 	//FERMETURE DES SOCKETS 	
 	#ifdef _WIN32
 		closesocket(connectedSocketFD);
@@ -258,4 +263,3 @@ int main(void)
 
 }
  
-

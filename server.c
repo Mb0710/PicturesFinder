@@ -22,7 +22,7 @@
 #define BUFFER_SIZE 1024
 
 #define PIXABAY_API_URL "https://pixabay.com/api/?key=%s&q=%s"
-#define PIXABAY_API_KEY "43706057-3a1c4807b06e95c95266d2840"
+#define PIXABAY_API_KEY "your-api-key-here"
 
 
 struct memory{

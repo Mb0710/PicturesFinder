@@ -52,7 +52,7 @@ This project allows a user to connect to a server, request an image using a keyw
    The client will ask for a keyword. Type a search term, and the server will fetch the relevant image from Pixabay and send it back to the client.
 
 4. **Receive the image**:
-   The image will be saved in the current directory of the client as `image_recue.jpg`.
+   The image will be saved in the current directory of the client as `image.jpg`.
 
 ### Server Code Overview
 
@@ -77,6 +77,3 @@ This project allows a user to connect to a server, request an image using a keyw
 
 - **Port**: By default, the server listens on port `5094`. You can change this in the `#define LISTENING_PORT` directive in both the client and server code.
 
-### License
-
-This project is licensed under the MIT License.
